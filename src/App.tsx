@@ -6,7 +6,6 @@ import AboutUs from './components/aboutus.tsx';
 import Products from './components/products.tsx';
 import Cases from './components/case.tsx';
 import HowWeWork from './components/howwework.tsx';
-import Form from './components/form.tsx';
 
 function App() {
   const [onHero, setOnHero] = useState(true);
