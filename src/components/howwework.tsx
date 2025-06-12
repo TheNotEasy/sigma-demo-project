@@ -26,7 +26,7 @@ export default function HowWeWork() {
   return (
     <div className="border-t-2 border-dotted border-gray-800 py-20 flex flex-col gap-15">
       <h1 className="text-3xl md:text-5xl text-center">Как мы работаем</h1>
-      <div className="container flex flex-col md:flex-row items-center gap-15">
+      <div className="container flex flex-col md:flex-row gap-15">
         <Step icon={<PresentationChartIcon />} title="Аудит" description="Анализируем ваши процессы за 48 часов" />
         <Step icon={<FlaskIcon />} title="Прототип" description="Тестируем MVP на реальных данных" />
         <Step icon={<TrendUpIcon />} title="Масштабирование" description="Запускаем систему на полную мощность" />
