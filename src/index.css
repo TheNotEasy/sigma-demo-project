@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face {
+  src: url("./assets/Inter.ttf");
+  font-family: Inter;
+}
+
+@font-face {
+  src: url("./assets/Inter-Italic.ttf");
+  font-family: Inter;
+  font-style: italic;
+}
+
+@theme {
+  --font-inter: Inter, system-ui;
+
+  --animate-fadeout: fadeout 0.150s linear;
+
+  @keyframes fadeout {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@utility container {
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  @variant sm {
+    padding: 0 20px;
+  }
+  
+  @variant lg {
+    padding: 0 80px;
+  }
+  
+  @variant xl {
+    padding: 0 120px;
+  }
+}
+
+body {
+  @apply bg-gray-950 font-inter text-white;
+}
+
+@utility bg-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, var(--color-gray-800) 0.1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-gray-800) 0.1px, transparent 1px);
+}
